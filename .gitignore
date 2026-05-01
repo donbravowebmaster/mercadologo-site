@@ -1,10 +1,7 @@
 node_modules/
+.wrangler/
+dist/
 .DS_Store
+*.log
 .env.local
 .env.*.local
-dist/
-build/
-.wrangler/
-*.log
-.idea/
-.vscode/

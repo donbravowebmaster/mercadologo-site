@@ -1,16 +1,12 @@
 {
-  "name": "mercadologo.com",
+  "name": "mercadologo",
   "version": "1.0.0",
-  "description": "Sitio web de Mercadologo",
-  "main": "index.js",
+  "description": "Mercadologo - Marketplace",
   "scripts": {
     "dev": "wrangler pages dev public",
     "build": "echo 'Build complete'",
     "deploy": "wrangler pages deploy public"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
     "wrangler": "^3.45.0"
   }
