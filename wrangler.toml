@@ -1,0 +1,14 @@
+name = "mercadologo"
+type = "javascript"
+account_id = ""
+workers_dev = true
+
+[env.production]
+name = "mercadologo-prod"
+routes = [
+  { pattern = "mercadologo.com", zone_name = "mercadologo.com" }
+]
+
+[build]
+command = "npm run build"
+cwd = "."
