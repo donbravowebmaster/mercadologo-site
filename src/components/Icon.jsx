@@ -1,6 +1,6 @@
 import * as FeatherIcons from 'feather-icons';
 
-export default function Icon({ name, size = 24, color = 'currentColor', className = '' }) {
+export default function Icon({ name, size = 24, color = 'currentColor', strokeWidth = 2, className = '' }) {
   const icon = FeatherIcons.icons[name];
 
   if (!icon) {
@@ -16,7 +16,7 @@ export default function Icon({ name, size = 24, color = 'currentColor', classNam
       viewBox="0 0 24 24"
       fill="none"
       stroke={color}
-      strokeWidth="2"
+      strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
       className={`feather feather-${name} ${className}`}

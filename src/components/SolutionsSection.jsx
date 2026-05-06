@@ -41,10 +41,10 @@ import Icon from './Icon';
 
 export default function SolutionsSection() {
   return (
-    <section id="soluciones" className="bg-gray-50 py-24 sm:py-32 md:py-40">
+    <section id="soluciones" className="bg-gray-50 py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-24 sm:mb-32">
+        <div className="mb-12 sm:mb-16">
           <h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-gray-900 mb-8 leading-none">
             Soluciones
           </h2>
@@ -54,17 +54,17 @@ export default function SolutionsSection() {
         </div>
 
         {/* Solutions Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {solutions.map((solution, idx) => (
             <div
               key={solution.id}
-              className="bg-white p-12 sm:p-14"
+              className="bg-white p-8"
               style={{
                 borderLeft: `4px solid #EC221F`,
               }}
             >
               {/* Illustration */}
-              <div className="mb-8 h-56 rounded-lg overflow-hidden bg-gray-50">
+              <div className="mb-6 h-40 rounded-lg overflow-hidden bg-gray-50">
                 <img
                   src={solution.illustration}
                   alt={solution.title}
@@ -106,8 +106,9 @@ export default function SolutionsSection() {
           ))}
         </div>
 
-        {/* Stats Section - Apple Style */}
+        {/* Stats Section */}
         <div className="mt-24 sm:mt-32 pt-24 sm:pt-32 border-t border-gray-200">
+          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-16 leading-none">En números</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
             <div>
               <div className="text-5xl sm:text-6xl font-black text-brand-red mb-4">500+</div>
